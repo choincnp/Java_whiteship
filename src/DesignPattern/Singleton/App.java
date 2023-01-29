@@ -2,6 +2,9 @@ package src.DesignPattern.Singleton;
 
 public class App{
     public static void main(String[] args) {
-        System.out.println("Hello World");
+        Settings settings = Settings.getInstance();
+        Settings settings1 = Settings.getInstance();
+        System.out.println(settings==settings1);
+
     }
 }
